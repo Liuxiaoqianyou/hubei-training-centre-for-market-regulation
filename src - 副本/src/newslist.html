@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/newslist.css">
+</head>
+
+<body>
+    <div class="header">
+        <!--欢迎部分 -->
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-8 col-sm-6 col-xs-7 no-pr header-top-left">欢迎访问湖北省市场监督管理培训中心</div>
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 no-pl header-top-right"><a href=""
+                            class="color-black">设为首页</a>
+                    </div>
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-2 no-pl header-top-right"><a href=""
+                            class="color-black">加入收藏</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 导航部分 -->
+        <div class="nav-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-5 col-sm-10 col-xs-10 nav-main-logo"> <img
+                            src="./img/logo/hbmtc-logo(1).png" alt="">
+                    </div>
+                    <div class="col-lg-5  col-md-7 hidden-sm hidden-xs">
+                        <ul class="nav-list pull-left">
+                            <li>
+                                <a href="" class="color-off-white">首页</a>
+                            </li>
+                            <li>
+                                <a href="" class="color-off-white">中心概况</a>
+                            </li>
+                            <li>
+                                <a href="" class="color-off-white">新闻中心</a>
+                            </li>
+                            <li>
+                                <a href="" class="color-off-white">课程</a>
+                            </li>
+                            <li>
+                                <a href="" class="color-off-white">服务</a>
+                            </li>
+                            <li>
+                                <a href="" class="color-off-white">查询</a>
+                            </li>
+                            <li>
+                                <a href="" class="color-off-white">在线学习</a>
+                            </li>
+                            <li>
+                                <a href="" class="color-off-white">联系我们</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 小于992显示 -->
+                    <div class="hidden-lg hidden-md  show-sm col-sm-2 col-xs-2">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="./img/icon/menu.png" alt="">
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><a href="">首页</a></li>
+                                <li><a href="">中心概述</a></li>
+                                <li><a href="">新闻中心</a></li>
+                                <li><a href="">课程</a></li>
+                                <li><a href="">服务</a></li>
+                                <li><a href="">查询</a></li>
+                                <li><a href="">在线学习</a></li>
+                                <li><a href="">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主体部分 -->
+    <div class="container">
+        <div class="news-card">
+            <div class="row row-5">
+                <!-- 主体内容区 当前位置-->
+                <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="content-card current-seat">
+                        当前位置：<a href="./index.html">首页</a>><a href="">新闻列表</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 新闻分类 -->
+    <div class="container">
+        <div class="news-card">
+            <div class="row row-5">
+                <div class="news-classify">
+                    <!-- 新闻分类区-->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active col col-lg-3 col-md-3 col-sm-6 col-xs-6"><a
+                                href="#dynamic" aria-controls="dynamic" role="tab" data-toggle="tab">动态要闻</a></li>
+                        <li role="presentation" class="col col-lg-3 col-md-3 col-sm-6 col-xs-6"><a href="#education"
+                                aria-controls="education" role="tab" data-toggle="tab">教学新闻</a></li>
+                        <li role="presentation" class="col col-lg-3 col-md-3 col-sm-6 col-xs-6"><a href="#messages"
+                                aria-controls="messages" role="tab" data-toggle="tab">通知公告</a></li>
+                        <li role="presentation" class="col col-lg-3 col-md-3 col-sm-6 col-xs-6"><a href="#settings"
+                                aria-controls="settings" role="tab" data-toggle="tab">热点头条</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 新闻列表区 -->
+    <div class="container">
+        <div class="news-card">
+            <div class="row row-5">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="dynamic">
+                        <div class="list-content ">
+                            <ul class="news-content-list">
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="./newsdetail.html">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="education">
+                        <div class="list-content">
+                            <ul class="news-content-list">
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="messages">
+                        <div class="list-content">
+                            <ul class="news-content-list">
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="settings">
+                        <div class="list-content">
+                            <ul class="news-content-list">
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                                <li class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <h4>
+                                        <a
+                                            href="">1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+                                    </h4>
+                                    <p>
+                                        12月4日，记者从湖北省质量强省工作委员会办公室获悉，“湖北质量精神口号征集”活动圆满落幕。经11111111111111111111111111111111111111111111111111111111
+                                    </p>
+                                    <div class="calender">
+                                        <em>06</em>
+                                        2019-12
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-block pull-left">
+                    <blockquote>
+                        <ul class="footer-list pull-left">
+                            <li>中心概况</li>
+                            <li><a href="">中心简介</a></li>
+                            <li><a href="">中心简介</a></li>
+                            <li><a href="">中心简介</a></li>
+                            <li><a href="">中心简介</a></li>
+                        </ul>
+                    </blockquote>
+                </div>
+                <div class="footer-block pull-left">
+                    <blockquote>
+                        <ul class="footer-list pull-left">
+                            <li>中心概况</li>
+                            <li><a href="">中心简介</a></li>
+                            <li><a href="">中心简介</a></li>
+                        </ul>
+                    </blockquote>
+                </div>
+                <div class="footer-block pull-left">
+                    <blockquote>
+                        <ul class="footer-list pull-left">
+                            <li>中心概况</li>
+                            <li><a href="">中心简介</a></li>
+                            <li><a href="">中心简介</a></li>
+                            <li><a href="">中心简介</a></li>
+                            <li><a href="">中心简介</a></li>
+                            <li><a href="">中心简介</a></li>
+                            <li><a href="">中心简介</a></li>
+                        </ul>
+                    </blockquote>
+                </div>
+                <div class="footer-block pull-left">
+                    <blockquote>
+                        <ul class="footer-list pull-left">
+                            <li>中心概况</li>
+                            <li><a href="">中心简介</a></li>
+                            <li><a href="">中心简介</a></li>
+                            <li><a href="">中心简介</a></li>
+                            <li><a href="">中心简介</a></li>
+                            <li><a href="">中心简介</a></li>
+                        </ul>
+                    </blockquote>
+                </div>
+                <div class="footer-block pull-left">
+                    <blockquote>
+                        <ul class="footer-list pull-left">
+                            <li>中心概况</li>
+                            <li><a href="">中心简介</a></li>
+                            <li><a href="">中心简介</a></li>
+                            <li><a href="">中心简介</a></li>
+                            <li><a href="">中心简介</a></li>
+                        </ul>
+                    </blockquote>
+                </div>
+                <div class="footer-block pull-left">
+                    <blockquote>
+                        <ul class="footer-list pull-left">
+                            <li>中心概况</li>
+                            <li><a href="">中心简介</a></li>
+                            <li><a href="">中心简介</a></li>
+                        </ul>
+                    </blockquote>
+                </div>
+                <div class="footer-block pull-left footer-block-last">
+                    <ul class="footer-list pull-left">
+                        <li>服务热线：123321241234</li>
+                        <li>231212434134</li>
+                        <li>周一至周五：9：30-18：00</li>
+                    </ul>
+                </div>
+                <div class="footer-block-bottom pull-left text-center">
+                    <div class="footer-block-bottom-hr">
+                        版权所有
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

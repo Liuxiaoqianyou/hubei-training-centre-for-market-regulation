@@ -1,0 +1,34 @@
+/* 当前位置区 */
+.news-card{
+    background-color: white;
+}
+.current-seat a{
+    color: black;
+}
+/* 标题区 */
+.news-title>h2{
+    text-align: center;
+    padding: 15px 30px;
+}
+.article-box {
+    padding: 30px 60px;
+    line-height: 2;
+    text-align: justify;
+    color:#333;
+    font-size: 16px;
+    text-indent: 2em;
+}
+.article-box p {
+    margin: 1em 0;
+}
+.article-box p img {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    .article-box{
+       padding-left: 0px;
+       padding-right: 0px;
+    }
+}
