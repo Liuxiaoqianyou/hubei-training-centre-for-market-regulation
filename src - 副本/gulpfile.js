@@ -66,20 +66,20 @@ gulp.task('img:minify', function(cb) {
 // });
   
 //   合并css
-  gulp.task('css:concat', function() {
-    //let timestamp = +new Date();
-    return gulp.src([
-        config.path.node_modules + '/bootstrap/dist/css/bootstrap.css',
-        config.path.src + '/css/*.css',
-      ])
-      .pipe(concat('build.css'))
-      .pipe(gulp.dest(config.path.dist + '/css'))
-      .pipe(connect.reload())
-  });
+  // gulp.task('css:concat', function() {
+  //   //let timestamp = +new Date();
+  //   return gulp.src([
+  //       config.path.node_modules + '/bootstrap/dist/css/bootstrap.css',
+  //       config.path.src + '/css/*.css',
+  //     ])
+  //     .pipe(concat('build.css'))
+  //     .pipe(gulp.dest(config.path.dist + '/css'))
+  //     .pipe(connect.reload())
+  // });
 
-//   压缩css
-  gulp.task('css:minify', ['css:concat'], function() {
-    return gulp.src(config.path.dist + '/css/**/*.css')
+//   压缩css   ['css:concat']
+  gulp.task('css:minify', function() {
+    return gulp.src(config.path.src + '/css/**/*.css')
       .pipe(postcss([
         // 生成css前缀
         autoprefixer({
